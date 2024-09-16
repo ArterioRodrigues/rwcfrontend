@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="../css/student-form.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- 
+    <a href="https://www.hunter.cuny.edu/rwc">
+        <header class="banner">
+            
+        </header>
+    </a>
+     -->
+
+    <main>
+        <div >
+            <img src="https://www.hunter.cuny.edu/rwc/overrides/hunter.publictheme.refresh.simple/department-logo-static/RWC_hunterFIN10.png/image"/>
+            <div class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="../pages/tutor-form.html">Tutor Page</a>
+                <a href="../pages/student-form.html">Student Page</a>
+            </div>
+        </div>
+
+        
+        <h1>Student Registration</h1>
+        
+
+        <form id="student-form">
+            <label for="name" style="display: inline; padding-left: 10px;">Name:</label>
+            <input type="text" id="name">
+
+            <label for="email" style="display: inline;">Hunter Email:</label>
+            <input type="text" id="email" name="email">
+
+            <label for="class">Choose a class for weekly tutoring:</label>
+            <select name="class" id="class">
+                <option value="class1">class1</option>
+                <option value="class2">class2</option>
+                <option value="class3">class3</option>
+                <option value="class4">class4</option>
+            </select><br>
+            
+
+            <h2>Student Availablity</h2>
+            <div class="scrollable-container">
+                <p>Tutoring sessions will be one hour. Please select the time(s) you are available on each day for tutoring.
+                    You may select multiple times each day. 
+                </p>
+            </div>
+
+            <div style="display:block; padding: auto;">
+            <table style="display: inline;">
+                <tr> 
+                    <td><h3>Monday</h3></td>
+                    <td><h3>Tuesday</h3></td>
+                    <td><h3>Wednesday</h3></td>
+                    <td><h3>Thursday</h3></td>
+                    <td><h3>Friday</h3></td>
+                </tr>
+                <tr> 
+                    <td>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">12pm - 1pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">1pm - 2pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">2pm - 3pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">3pm - 4pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">4pm - 5pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">5pm - 6pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">6pm - 7pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">7pm - 8pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">8pm - 9pm</button>
+                    </td>
+                    <td>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">12pm - 1pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">1pm - 2pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">2pm - 3pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">3pm - 4pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">4pm - 5pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">5pm - 6pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">6pm - 7pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">7pm - 8pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">8pm - 9pm</button>
+                    </td>
+                    <td>
+                        <button onclick="changeButton(this)" style="display: block;"  type="button">12pm - 1pm</button>
+                        <button onclick="changeButton(this)" style="display: block;"  type="button">1pm - 2pm</button>
+                        <button onclick="changeButton(this)" style="display: block;"  type="button">2pm - 3pm</button>
+                        <button onclick="changeButton(this)" style="display: block;"  type="button">3pm - 4pm</button>
+                        <button onclick="changeButton(this)" style="display: block;"  type="button">4pm - 5pm</button>
+                        <button onclick="changeButton(this)" style="display: block;"  type="button">5pm - 6pm</button>
+                        <button onclick="changeButton(this)" style="display: block;"  type="button">6pm - 7pm</button>
+                        <button onclick="changeButton(this)" style="display: block;"  type="button">7pm - 8pm</button>
+                        <button onclick="changeButton(this)" style="display: block;"  type="button">8pm - 9pm</button>
+                    </td>
+                    <td>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">12pm - 1pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">1pm - 2pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">2pm - 3pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">3pm - 4pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">4pm - 5pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">5pm - 6pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">6pm - 7pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">7pm - 8pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">8pm - 9pm</button>
+                    </td>
+                    <td>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">12pm - 1pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">1pm - 2pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">2pm - 3pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">3pm - 4pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">4pm - 5pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">5pm - 6pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">6pm - 7pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">7pm - 8pm</button>
+                        <button onclick="changeButton(this)" style="display: block;" type="button">8pm - 9pm</button>
+                    </td>
+                </tr>
+            </table>
+            </div>
+            
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <footer class="footer">
+            <p>Hunter College</p>
+            <p>695 Park Avenue</p>
+            <p>New York, NY 10065</p>
+            <p>Phone: (212) 772-4000</p>
+        </footer>
+    </main>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
